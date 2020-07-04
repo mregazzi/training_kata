@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -5,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class YouOnlyNeedOneTest {
 
     @Test
+    @DisplayName("test something")
     public void testSomething() {
         assertEquals(YouOnlyNeedOne.check(new Object[] {66, 101}, 66), true);
         assertEquals(YouOnlyNeedOne.check(new Object[] {80, 117, 115, 104, 45, 85, 112, 115}, 45), true);

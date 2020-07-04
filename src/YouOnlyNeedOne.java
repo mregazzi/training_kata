@@ -1,8 +1,10 @@
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class YouOnlyNeedOne {
     public static boolean check(Object[] objects, Object o) {
-        System.out.println(Arrays.stream(objects).filter(o));
-                return true;
+        Stream<Object> so = (Arrays.stream(objects));
+        System.out.println();
+        return true;
     }
 }
