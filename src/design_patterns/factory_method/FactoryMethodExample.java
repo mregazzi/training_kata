@@ -14,8 +14,7 @@ public class FactoryMethodExample {
         System.out.println(System.getProperty("os.name"));
         if (System.getProperty("os.name").equals("Linux")) {
             dialog = new WindowsDialog();
-        }
-        else {
+        } else {
             dialog = new HtmlDialog();
         }
     }
