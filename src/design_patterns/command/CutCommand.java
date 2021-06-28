@@ -8,7 +8,7 @@ public class CutCommand extends Command {
 
     @Override
     public boolean execute() {
-        if (editor.textField.getSelectedText().isEmpty()) return false;
+        if (editor.textField.getSelectedText() == null || editor.textField.getSelectedText().isEmpty()) return false;
 
         backup();
         String source = editor.textField.getText();
