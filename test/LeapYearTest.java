@@ -10,7 +10,8 @@ public class LeapYearTest {
             "1997, false",
             "5, false"
     })
-    void should_not_be_a_leap_year_if_not_divisible_by_4(int input, boolean output){
+    void should_not_be_a_leap_year_if_not_divisible_by_4(int input, boolean output) {
+
         assertFalse(newYear(input).isLeap());
     }
 
