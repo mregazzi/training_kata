@@ -53,6 +53,7 @@ public class Josephus {
         for (Object o : arrayList) {
             System.out.print(o.toString() + "; ");
         }
+        
         System.out.println();
     }
 
